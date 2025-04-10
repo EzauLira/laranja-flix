@@ -20,6 +20,8 @@ A interface inclui um carrossel automático de filmes, destaque dinâmico no cen
    git clone https://github.com/seu-usuario/laranjaflix.git
    
 2. Abra index.html no navegador para visualizar a página inicial.
+   
+3. Acesse o site por aqui:  https://ezaulira.github.io/laranjinha-flix/
 
 
 ## Melhorias Futuras 🚀
