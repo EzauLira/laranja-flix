@@ -21,8 +21,6 @@ header {
     position: relative;
     /* Define um contexto de empilhamento */
     z-index: 9999;
-    /* Garante que o header fique acima do .hero */
-    background-color: #1f1f1f;
     /* Adicione uma cor de fundo para visualização */
     padding: 5px;
 }
@@ -49,7 +47,6 @@ header .login button {
 /*SECÇÃO HERO*/
 .hero {
     min-height: -100px;
-    background-color: #000000;
     margin-top: -5%;
     position: relative;
     height: 50vh;
@@ -144,4 +141,102 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #000000;
+}
+
+
+/* Regras para telas menores (mobile-first) */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        /* Alinha itens verticalmente */
+        align-items: center;
+        /* Centraliza o conteúdo */
+        padding: 10px;
+    }
+
+    header .logo img {
+        width: 80px;
+        /* Reduz o tamanho do logo */
+        left: 41.5%;
+    }
+
+    header .login button {
+        top: auto;
+        /* Remove posicionamento absoluto */
+        left: 41.5%;
+        margin-top: 10px;
+        /* Espaçamento abaixo do logo */
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* Seção Hero */
+    .hero {
+        height: auto;
+        /* Altura dinâmica */
+        padding: 130px;
+        /* Adiciona espaçamento interno */
+        right: auto;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        /* Reduz o tamanho do título */
+    }
+
+    .hero p {
+        font-size: 16px;
+        /* Reduz o tamanho do parágrafo */
+    }
+
+    /* Carrossel */
+    .carousel-container {
+        height: auto;
+        /* Altura dinâmica */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+    }
+
+    .movie-card {
+        min-width: 150px;
+        /* Reduz a largura dos cartões */
+        margin-right: 10px;
+        /* Reduz o espaçamento entre os cartões */
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 15px;
+        /* Reduz o preenchimento interno */
+    }
+
+    footer p {
+        font-size: 14px;
+        /* Reduz o tamanho do texto */
+    }
+}
+
+/* Estilos base para mobile */
+body {
+    font-size: 16px;
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .movie-card {
+        min-width: 120px;
+    }
 }
