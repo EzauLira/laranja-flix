@@ -34,7 +34,7 @@ function updateHighlight() {
 
     movieCards.forEach((card, index) => {
         const cardRect = card.getBoundingClientRect(); //posição do card
-        const cardCenter = cardRect.left - cardRect.width / 3;
+        const cardCenter = cardRect.left - cardRect.width / 2;
 
         //verifica se o centro do card está no centro da tela;
         if (Math.abs(cardCenter - containerCenter) < cardRect.width / 1) {
