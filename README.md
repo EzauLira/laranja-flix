@@ -21,7 +21,7 @@ A interface inclui um carrossel automático de filmes, destaque dinâmico no cen
    
 2. Abra index.html no navegador para visualizar a página inicial.
    
-3. Acesse o site por aqui:  https://ezaulira.github.io/laranjinha-flix/
+3. Acesse o site por aqui:  https://ezaulira.github.io/laranja-flix/
 
 
 ## Melhorias Futuras 🚀
